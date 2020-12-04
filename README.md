@@ -1,4 +1,4 @@
-COVID Dashboard ASP.NET Core
+# COVID Dashboard ASP.NET Core
 
 O Objetivo deste trabalho é desenvolver uma aplicação usando ASP.NET MVC.
 
