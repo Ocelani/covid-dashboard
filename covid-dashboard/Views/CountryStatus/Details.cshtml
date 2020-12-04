@@ -1,0 +1,42 @@
+﻿@model covid_dashboard.Models.CountryStatus
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>CountryStatus</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Country.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CasosConfirmados)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CasosConfirmados)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mortes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mortes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Recuperados)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Recuperados)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

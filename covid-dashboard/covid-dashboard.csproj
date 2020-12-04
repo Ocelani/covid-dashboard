@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-covid_dashboard-55C8D2E3-9884-4A5F-8D60-01D688BC081D</UserSecretsId>
+    <RootNamespace>covid_dashboard</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20201017043951_covid-local-1.cs" />
+    <Compile Remove="Data\Migrations\20201017043951_covid-local-1.Designer.cs" />
+    <Compile Remove="Models\Pais.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>
